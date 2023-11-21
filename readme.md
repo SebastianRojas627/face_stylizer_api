@@ -74,10 +74,10 @@ Ejecuta el siguiente comando para iniciar el servidor utilizando Uvicorn:
 ```bash
 uvicorn app:app --reload
 ```
-Esto iniciará el servidor de la aplicación FastAPI. El argumento --reload permite que el servidor se reinicie automáticamente cuando se realicen cambios en el código.
+Esto iniciará el servidor de la aplicación FastAPI. 
 
 ## 5. Esperar a que el Servicio se Levante
-Una vez que ejecutes el comando, espera a que el servicio se levante completamente. Verás un mensaje indicando que el servidor está en funcionamiento.
+El levantamiento del servicio tomara unos cuantos segundos mientras crea instancias de los modelos de estilizacion
 
 ## 6. Interactuar con el API
-Ahora que el servidor está en funcionamiento, puedes interactuar con los diferentes endpoints del API para estilizar imágenes utilizando los modelos disponibles.
+Con el servicio completamente levantado ahora puede interactuarse con el api ingresando al URL 127.0.0.1:8000/docs
