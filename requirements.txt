@@ -1,0 +1,12 @@
+fastapi
+sys
+csv
+datetime
+fastapi.responses
+numpy
+uvicorn
+io
+mediapipe
+mediapipe.tasks
+mediapipe.tasks.python
+pillow
