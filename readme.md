@@ -72,8 +72,7 @@ Esto instalará todas las dependencias necesarias para ejecutar el proyecto.
 Ejecuta el siguiente comando para iniciar el servidor utilizando Uvicorn:
 
 ```bash
-Copy code
-```uvicorn app:app --reload
+uvicorn app:app --reload
 ```
 Esto iniciará el servidor de la aplicación FastAPI. El argumento --reload permite que el servidor se reinicie automáticamente cuando se realicen cambios en el código.
 
