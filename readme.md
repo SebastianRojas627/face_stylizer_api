@@ -4,9 +4,9 @@ Topicos Selectos en IA
 
 # Modelo 
 
-Esta API aplica los modelos de estilizacion de rostros disponibles en [mediapipe](https://developers.google.com/mediapipe/solutions/vision/face_stylizer). Los modelos mencionados son el modelo de **Color Sketch**, que simula el rostro del usuario recreandolo como un personaje de libro de comic. El siguiente modelo es **Color Ink**, que recrea el rostro del usuario como un dibujo de boligrafos de tinta. Y finalmente el ultimo modelo implementado es **Oil Painting**, que simula la apariencia del rostro del usuario como si este se encontrara en una pintura de aceite.
+Esta API aplica los modelos de estilizacion de rostros disponibles en [mediapipe](https://developers.google.com/mediapipe/solutions/vision/face_stylizer). Los modelos mencionados son el modelo de **Color Sketch**, que simula el rostro del usuario recreandolo como un personaje de libro de comic. El siguiente modelo es **Color Ink**, que recrea el rostro del usuario como un dibujo de boligrafos de tinta. Y finalmente el ultimo modelo implementado es **Oil Painting**, que simula la apariencia del rostro del usuario como si este se encontrara en una pintura de aceite. Junto con un analisis de sentimiento de la foto inicial, con la cual se hace un tratamiento de lenguaje para la generacion de historia y objetivos del personaje final.
 
-# Stylizer API
+# Character Creator
 Este es un API que ofrece servicios de estilización de imágenes utilizando tres modelos diferentes: Color Ink, Color Sketch y Oil Painting.
 
 ## Métodos Fundamentales
