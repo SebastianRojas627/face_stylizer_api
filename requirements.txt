@@ -10,3 +10,8 @@ mediapipe
 mediapipe.tasks
 mediapipe.tasks.python
 pillow
+google-cloud-vision
+python-multipart
+openai
+python-dotenv
+starlette.middlewares.cors

@@ -17,7 +17,6 @@ class ColorSketch:
     def stylize_image(self, image_array: np.ndarray):
       mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=image_array)
       stylized_image = self.stylizer.stylize(mp_image)
-      #rgb_stylized_image = cv2.cvtColor(stylized_image.numpy_view(), cv2.COLOR_BGR2RGB)
       if stylized_image is None:
         print("Stylized image is None. Cannot proceed.")
         return None
@@ -26,7 +25,7 @@ class ColorSketch:
 
 class ColorInk:
     def __init__(self, model_selection=MODEL_PATH_COLOR_INK):
-      print("Starting the color sketch model")
+      print("Starting the color ink model")
       base_options = python.BaseOptions(model_asset_path=model_selection)
       options = vision.FaceStylizerOptions(base_options=base_options)
       self.stylizer = vision.FaceStylizer.create_from_options(options)
@@ -34,7 +33,6 @@ class ColorInk:
     def stylize_image(self, image_array):
       mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=image_array)
       stylized_image = self.stylizer.stylize(mp_image)
-      #rgb_stylized_image = cv2.cvtColor(stylized_image.numpy_view(), cv2.COLOR_BGR2RGB)
       if stylized_image is None:
         print("Stylized image is None. Cannot proceed.")
         return None
@@ -43,7 +41,7 @@ class ColorInk:
 
 class OilPainting:
     def __init__(self, model_selection=MODEL_PATH_OIL_PAINTING):
-      print("Starting the color sketch model")
+      print("Starting the oil painting model")
       base_options = python.BaseOptions(model_asset_path=model_selection)
       options = vision.FaceStylizerOptions(base_options=base_options)
       self.stylizer = vision.FaceStylizer.create_from_options(options)
@@ -51,7 +49,6 @@ class OilPainting:
     def stylize_image(self, image_array):
       mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=image_array)
       stylized_image = self.stylizer.stylize(mp_image)
-      #rgb_stylized_image = cv2.cvtColor(stylized_image.numpy_view(), cv2.COLOR_BGR2RGB)
       if stylized_image is None:
         print("Stylized image is None. Cannot proceed.")
         return None
